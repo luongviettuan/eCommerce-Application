@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+				cd starter_code
                 sh 'mvn --version'
             }
         }
